@@ -1,25 +1,39 @@
-\documentclass{article}
+\documentclass{resume}
 
-\usepackage{hyperref}
-\usepackage{graphicx}
+\usepackage{hyperref} 
+\usepackage{graphicx} 
+\usepackage{caption} 
+\usepackage{sidecap}
+\usepackage{comment}
+\usepackage[export]{adjustbox}
+
+\newcommand{\name}[1]{%
+	{\Huge{#1}}
+}
 
 \begin{document}
-Sam Vongsay
-\href{www.samvongsay.com}{samvongsay.com}
+%\subsection{SOLUTE Inc.}
 
-\begin{figure}[h!]
-	\includegraphics[width=0.05\linewidth]{images/gmail_icon.png}
-\end{figure}
-\href{mailto:sdvongsay@gmail.com}{sdvongsay@gmail.com}
+\section{Education}
+%\subsection{University of California: Riverside}
 
-\begin{figure}[h!]
-	\includegraphics[width=0.05\linewidth]{images/github_icon.png}
-\end{figure}
-\href{www.github.com/samvongsay}{samvongsay}
+%Title
+\name{Sam Vongsay}\\
+\href{https://www.samvongsay.com}{samvongsay.com}
 
-\begin{figure}[h!]
-	\includegraphics[width=0.05\linewidth]{images/linkedin_icon.png}
-\end{figure}
-\href{www.linkedin.com/in/samvongsay}{samvongsay}
+%Social Media
+\begin{SCfigure}[][h]
+	\adjustimage{width=0.05\linewidth,left}{image/gmail_icon.png}
+	\href{mailto:sdvongsay@gmailcom}{sdvongsay@gmail.com}
+\end{SCfigure}
+\begin{SCfigure}[][h]
+	\adjustimage{width=0.05\linewidth,left}{image/github_icon.png}
+	\href{https://www.github.com/samvongsay}{samvongsay}
+\end{SCfigure}
+\begin{SCfigure}[][h]
+	\adjustimage{width=0.05\linewidth,left}{image/linkedin_icon.png}
+	\href{https://www.linkedin.com/in/samvongsay}{samvongsay}
+\end{SCfigure}
+
 
 \end{document}
